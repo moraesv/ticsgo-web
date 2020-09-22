@@ -136,7 +136,7 @@ export default class AtendimentoForm extends Component {
     });
   }
   cadastrar() {
-    const newTask = {
+    const newAtendimento = {
       horaAtendimento: this.state.horaAtendimento,
       descricao: this.state.descricao,
       horaInicioAtuacao: this.state.horaInicioAtuacao,
@@ -150,7 +150,7 @@ export default class AtendimentoForm extends Component {
     };
 
     axios
-      .post(`http://localhost:3003/api/atendimentos`, newTask)
+      .post(`http://localhost:3003/api/atendimentos`, newAtendimento)
       .then((resposta) => {
         console.log(`Funcionou ${resposta.data}`);
         this.buscaAtendimentos();
@@ -221,7 +221,10 @@ export default class AtendimentoForm extends Component {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="qualificadoEnvolvido"> Qualificado como Envolvido </label>
+          <label htmlFor="qualificadoEnvolvido">
+            {" "}
+            Qualificado como Envolvido{" "}
+          </label>
           <input
             className="form-control"
             type="text"

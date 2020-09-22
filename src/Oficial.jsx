@@ -3,13 +3,13 @@ import { Component } from "react";
 import PageHeader from "./template/PageHeader";
 import OficialForm from "./OficialForm";
 
-export default class Atendimento extends Component {
-    render() {
-        return (
-            <div>      
-                <PageHeader titulo="Oficiais" subtitulo="Cadastro" />
-                <OficialForm />
-            </div>
-        );
-    }
+export default class Oficial extends Component {
+  render() {
+    return (
+      <div>
+        <PageHeader titulo="Oficiais" subtitulo="Cadastro" />
+        <OficialForm />
+      </div>
+    );
+  }
 }
