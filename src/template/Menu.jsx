@@ -20,6 +20,12 @@ export default class Menu extends Component {
                 <a href="/endereco"> Endereços </a>
               </li>
               <li>
+                <a href="/atendimento"> Atendimentos </a>
+              </li>
+              <li>
+                <a href="/oficial"> Oficial </a>
+              </li>
+              <li>
                 <a href="/about"> Sobre </a>
               </li>
             </ul>

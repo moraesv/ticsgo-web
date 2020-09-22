@@ -136,7 +136,7 @@ export default class EnderecoForm extends Component {
     });
   }
   cadastrar() {
-    const newTask = {
+    const newEndereco = {
       cep: this.state.cep,
       estado: this.state.estado,
       cidade: this.state.cidade,
@@ -150,7 +150,7 @@ export default class EnderecoForm extends Component {
     };
 
     axios
-      .post(`http://localhost:3003/api/enderecos`, newTask)
+      .post(`http://localhost:3003/api/enderecos`, newEndereco)
       .then((resposta) => {
         console.log(`Funcionou ${resposta.data}`);
         this.buscaEnderecos();
